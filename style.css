@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* 
+Mobile: 375px
+Desktop: 1440px
+Family: Inter
+Weights: 400,600,700
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+
+  color: var(--white);
+}
+
+.container {
+  height: 100vh;
+  background: var(--grey900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  max-width: 350px;
+  background-color: var(--grey800);
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 0.875rem;
+}
+.card-top .card-avatar {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+}
+
+.card-info h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-info .card-location {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.card-info .card-quote {
+  color: var(--white);
+  opacity: 0.65;
+  font-size: 0.75rem;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-bottom .card-social-link {
+  background-color: var(--grey700);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-bottom .card-social-link:hover {
+  background-color: var(--green);
+  color: var(--grey900);
+}
